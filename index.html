@@ -12,12 +12,24 @@
 </head>
 <body>
 
-<a class="button is-large is-success">+1</a>
-<a class="button is-large is-danger">-1</a>
+<a onclick="addOne()" class="button is-large is-success">+1</a>
+<a onclick="subtractOne()" class="button is-large is-danger">-1</a>
 <a class="button is-static is-danger" id="counter"></a>  
-  
+<body onload="start()">
+ 
 <script>
-  document.getElementById('counter').innerHTML = c + 1;
 
+function start() {  
+    var c = 0;
+    document.getElementById('counter').innerHTML = c + 1;
+}
+function addOne() {
+    c++;
+    document.getElementById('counter').innerHTML = c + 1;
+}
+function subtractOne() {
+    c--;
+    document.getElementById('counter').innerHTML = c + 1;
+}
 </body>
 </html>
