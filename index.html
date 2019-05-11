@@ -14,7 +14,7 @@
   
 <a onclick="addOne()" class="button is-large is-success">+1</a>
 <a onclick="subtractOne()" class="button is-large is-danger">-1</a>
-<a class="button is-static is-danger" id="counter"></a>  
+<a class="button is-static is-danger" id="counter">0</a>  
   
 <script>
   
@@ -23,12 +23,14 @@ function start() {
     document.getElementById('counter').innerHTML = c;
 }
 function addOne() {
-    var c = c + 1;
-    document.getElementById('counter').innerHTML = c;
+    var number = counter.innerHTML;
+    number++;
+    counter.innerHTML = number;
 }
 function subtractOne() {
-    var c = c - 1;
-    document.getElementById('counter').innerHTML = c;
+    var number = counter.innerHTML;
+    number--
+    counter.innerHTML = number;
 }
 </script>
   
