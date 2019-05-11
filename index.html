@@ -17,17 +17,18 @@
 <a class="button is-static is-danger" id="counter"></a>  
   
 <script>
+  
 function start() {  
     var c = 0;
-    document.getElementById('counter').innerHTML = c + 1;
+    document.getElementById('counter').innerHTML = c;
 }
 function addOne() {
-    c++;
-    document.getElementById('counter').innerHTML = c + 1;
+    var c = c + 1;
+    document.getElementById('counter').innerHTML = c;
 }
 function subtractOne() {
-    c--;
-    document.getElementById('counter').innerHTML = c + 1;
+    var c = c - 1;
+    document.getElementById('counter').innerHTML = c;
 }
 </script>
   
